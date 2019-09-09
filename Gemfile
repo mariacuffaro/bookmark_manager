@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'sinatra'
 gem 'travis'
+gem 'pg'
 
 group :test do
   gem 'capybara'

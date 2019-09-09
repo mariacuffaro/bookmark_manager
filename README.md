@@ -32,11 +32,6 @@ rackup
 
 ## Setting up the database
 
-####If you need to - install PostgreSQ
-$> brew install postgresql
-
-Follow any install instructions
-
 ####Enter postgresql and create the database
 $>psql
 =# CREATE DATABASE "bookmark_manager";
