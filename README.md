@@ -25,7 +25,25 @@ app.rb->user: http response displaying bookmark list
 
 ## Terminal instructions for downloading and running app
 
-  git clone git@github.com:mariacuffaro/bookmark_manager.git
-  cd rps-challenge
-  bundle install
-  rackup
+git clone git@github.com:mariacuffaro/bookmark_manager.git
+cd rps-challenge
+bundle install
+rackup
+
+## Setting up the database
+
+####If you need to - install PostgreSQ
+$> brew install postgresql
+
+Follow any install instructions
+
+####Enter postgresql and create the database
+$>psql
+=# CREATE DATABASE "bookmark_manager";
+
+####Connect to the database and create the tables
+=# \c bookmark_manager;
+
+Then run the query in the file 01_create_bookmarks_table.sql
+
+type \q to exit postgresql
