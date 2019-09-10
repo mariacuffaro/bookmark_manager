@@ -1,3 +1,6 @@
-<%= @bookmarks.each do |url| %>
-<%= bookmark %><br>
-<% end %>
+<h1>Bookmarks</h1>
+<ul>
+  <% @bookmarks.each do |url| %>
+    <li><%= url %></li>
+  <% end %>
+</ul>
