@@ -36,8 +36,12 @@ rackup
 $>psql
 =# CREATE DATABASE "bookmark_manager";
 
-####Connect to the database and create the tables
+=# CREATE DATABASE "bookmark_manager_test";
+
+####Connect to each database and create the tables
 =# \c bookmark_manager;
+
+=# \c bookmark_manager_test; 
 
 Then run the query in the file 01_create_bookmarks_table.sql
 
